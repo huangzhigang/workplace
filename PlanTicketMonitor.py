@@ -46,6 +46,12 @@ def visitweb():
 
     #print(szhk)
 
+    soup1 = BeautifulSoup(html, "html.parser")
+    # print(soup1)
+    # print(soup1.find())
+    doc = soup1.select('.hbcx_lb')
+    print(doc)
+    print(doc[0]["name"])
 
 if __name__ == '__main__':
     print("--------------hello python--------------")
